@@ -10,16 +10,15 @@
 body{
     background-color: Black;
 }
-
+/*background Image*/
 .background{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/background.png);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/background.png) no-repeat center center/cover;
     min-height: 100vh;
     width: 100%;
-    background-size: cover;
-    position: relative;
 
 }
-
+ 
+/*Navigation Bar*/
 nav{
     padding: 30px 10px;
     display: flex;
@@ -57,6 +56,8 @@ nav ul li a.active{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
+
+/*Content*/
  .content{
     display: flex;
     justify-content: space-around;
@@ -64,6 +65,7 @@ nav ul li a.active{
     width: 100%;
     
  }
+
 .text{
     max-height: 500px;
     max-width: 500px;
@@ -76,8 +78,13 @@ nav ul li a.active{
 
 .text h1{
     font-size: 50px;
-    
     color: #94bd6e;
+}
+
+.text h1 span:hover{
+    color: #fff;
+    cursor: pointer;
+    
 }
 .text p{
     font-size: 20px;
@@ -98,8 +105,9 @@ button{
 
 }
 button:hover{
-    background-color: #ffffffc2;
+    background-color: #ffffff3b;
     color:rgb(14, 107, 14);
+    transition: all 0.5 ease-in;
 }
 
 .image{
@@ -111,4 +119,29 @@ button:hover{
 .image img{
     max-width: 1000px;
     max-height: 500px;
+}
+
+.ftr{
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ftr-txt{
+    margin-top: 10px;
+    color: #94bd6e;
+    font-size: 15px;
+}
+
+
+.socials{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.socials img{
+    height: 50px;
+    width: 50px;
 }

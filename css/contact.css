@@ -57,43 +57,32 @@ nav ul li a.active{
   text-decoration: underline;
   transition: all 0.5s ease;
 }
-.content{
-  display: flex;
-  justify-content: space-around;
-  max-height: 500px;
-  width: 100%;
-  
-}
-.text{
-  max-height: 500px;
-  max-width: 500px;
-  text-align: left;
-  margin-top: 150px;
-  margin-left:30px;
-  color: rgb(14, 107, 14);
-  font-family: 'Cascadia Code', sans-serif;
+
+ h1{
+    max-height: 500px;
+    max-width: 500px;
+    text-align: left;
+    margin-top: 150px;
+    margin-left:50px;
+    color: rgb(14, 107, 14);
+    font-family: 'Cascadia Code', sans-serif;
 }
 
-.text h1{
-  font-size: 50px;
-  
+form{
+  width: 85%;
+  max-width: 600px;
+}
+
+.input{
+  margin-bottom: 30px;
   color: #94bd6e;
 }
-.text p{
-  font-size: 20px;
-}
 
-button{
-  padding: 15px;
-  margin: 15px;
-  margin-left: 0;
-  color:#fff;
-  border: solid 3px rgb(14, 107, 14);
-  border-radius: 15px;
-  font-size: 20px;
-  font-family:'Genos', sans-serif;
-  text-decoration-style: solid;
-  cursor: pointer;
-  background-color: black;
-
+input,textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 10px;
 }

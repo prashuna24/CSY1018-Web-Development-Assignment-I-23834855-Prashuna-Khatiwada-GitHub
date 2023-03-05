@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Prashuna || Home</title>
+        <title> Prashuna || Contact</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/contact.css">
@@ -16,11 +16,47 @@
 
                 <a href="index.html"> <img src="images/logo.png"/> </a>
                 <ul>
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="contact.html" class="active"> Contact </a></li>
-                    <li><a href="portfolio.html"> Portfolio </a></li>
-                    <li><a href="work-experience.html"> Work Experience</a></li>
-                    <li><a href="site-report.html"> Site Report </a></li>
+                    <li><a href="index.html" title="Home Page"> Home </a></li>               
+                    <li><a href="portfolio.html" title="Portfolio"> Portfolio </a></li>
+                    <li><a href="contact.html" class="active" title="Contact"> Contact </a></li>
+                    <li><a href="work-experience.html" title="Work Experience"> Work Experience</a></li>
+                    <li><a href="site-report.html" title="Site Report"> Site Report </a></li>
 
                 </ul>
             </nav>
+
+                <h1> Let's get in touch!</h1>
+
+                <!--Contact Form-->
+                <form>
+                    <div class="input">
+                        <input type="text" id="first-name">
+                        <label for="first-name"> First Name</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" id="last-name">
+                        <label for="last-name"> Last Name</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" id="number">
+                        <label for="Number"> Contact Number</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="email" id="email">
+                        <label for="email"> E-Mail Address</label>
+                    </div>
+
+                    <div class="input">
+                        <textarea id="msg" rows="8"> </textarea>
+                        <label for="msg">Leave a message!</label>
+                    </div>
+
+                    <button type="submit"> Submit </button>
+                </form>
+                
+        </section>
+    </body>
+</html>
