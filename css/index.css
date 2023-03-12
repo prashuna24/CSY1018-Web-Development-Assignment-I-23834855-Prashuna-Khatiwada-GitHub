@@ -73,7 +73,7 @@ nav ul li a.active{
     justify-content: space-between;
     max-height: 700px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
     
  }
 
@@ -135,7 +135,7 @@ nav ul li a.active{
     text-align: left;
     margin-top: 80px;
     margin-left:150px;
-    color: #8892b0;
+    color: #908cbf;
     font-family: 'Genos', sans-serif;
 }
 
@@ -168,7 +168,7 @@ nav ul li a.active{
 }
 
 .content .image{
-    margin-top:30px;
+    margin-top:0px;
     margin-right:80px;
 }
 
@@ -181,8 +181,8 @@ nav ul li a.active{
 #abt-me{
     display: flex;
     max-height: 500px;
-    width: 90%;
-    margin-top: 150px;
+    width: 80%;
+    margin-top: 180px;
     margin-left:30px;
 }
 
@@ -199,71 +199,56 @@ nav ul li a.active{
 }
 
 .me{
-    background-color: rgba(39, 49, 44, 0.642);
+    background-color: rgb(0, 0, 0);
     max-height: 600px;
     max-width: 1000px;
 
 }
 .me-txt h2{
     text-align: center;
+    font-family: 'Genos', monospace;
+    font: weight 900px;
+    font-size: 40px;
+    color: #2f8619;
+
 }
 .me-txt{
     margin: 10px;
     margin-top: 15px ;
     text-align:left;
-    color: #94bd6e;
+    color: #908cbf;
     font-size: 18px;
+    font-family: serif;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+.me-txt span{
+  color: #ae658e;
+  font-weight: 24px;
+}
+
+.me-txt .tech{
+  list-style-type:square;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  
 }
 
 .ftr{
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0.526);
     width: 100%;
     margin-bottom: 0;
     margin-top: 50px;
-    display:flex;
     text-align: center;
-    justify-content: space-between;
-}
 
-.ftr-col{
-    padding: 10px;
-    margin-top: 20px;
-}
-.ftr-col-1{
-    display: inline-block;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.ftr-col-1 img{
-    height: 30px;
-    width: 30px;
-    padding:20px;
-    margin: 5px;
 }
 
 .ftr-col-2{
+    text-align: center;
     padding: 20px;
-}
-.ftr-col-3{
-    text-align: right;
-    color: #94bd6e;
-    margin-top: 0px;
-    margin-right: 10px;
-    padding: 20px;
-    display: inline ;
-    
-}
-
-.ftr-col-3 ul { 
-    list-style-type: none;
-
-}
-
-.ftr-col-3 ul li a{
-    text-transform: uppercase;
-    color: #94bd6e;
-    text-decoration: underline;
-    padding: 2px;
-    font-size: 10px;
+    font-family: 'Cascadia Code';
+    color:#2f8619;
+    font-weight: 40px;
+    font-size: 12px;
 }
