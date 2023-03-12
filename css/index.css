@@ -16,8 +16,7 @@ body{
 }
 /*background Image*/
 .background{
-    background-image: url(../images/1.webp
-    );
+    background-image: url(../images/background.png);
     min-height: 100vh;
     width: 100%;
     background-size: cover;
@@ -55,9 +54,10 @@ nav ul li{
 }
 
 nav ul li a{
-    color:  #94bd6e;
+    color:  #2f8619;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
+    letter-spacing: 1px;
 }
 
 nav ul li a:hover,
@@ -70,47 +70,90 @@ nav ul li a.active{
 /*Content*/
  .content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-height: 700px;
     width: 100%;
+    margin-top: 60px;
     
  }
 
-.text{
+ /*Typewriter Animation*/
+ .wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #e8f6e7;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #50c533;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #59a71e;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+.content .text{
     max-height: 500px;
     max-width: 500px;
     text-align: left;
-    margin-top: 150px;
-    margin-left:30px;
-    color: rgb(54, 229, 156);
+    margin-top: 80px;
+    margin-left:150px;
+    color: #8892b0;
     font-family: 'Genos', sans-serif;
 }
 
-.text h1{
+/*Main body paragraph*/
+.content .h1{
     font-size: 50px;
-    color: #94bd6e;
+}
+.content .text p{
+    font-size: 25px;
 }
 
-.text h1 span{
-    color: #94bd6e;
-    transition: 0.5s;
-}
-.text h1 span:hover{
-    color: #fff;
-    cursor: pointer;
-
-}
-.text p{
-    font-size: 20px;
-}
-
-.button{
-    padding: 15px;
-    margin: 15px;
+.content .button{
+    padding: 10px;
+    margin: 25px;
     margin-left: 0;
-    color:#fff;
-    border: solid 3px rgb(14, 107, 14);
-    border-radius: 15px;
+    color:#50c533;
+    border: solid 3px rgb(22, 22, 22);
+    border-radius: 10px;
     font-size: 20px;
     font-family:'Genos', sans-serif;
     text-decoration-style: solid;
@@ -118,20 +161,20 @@ nav ul li a.active{
     background-color: black;
 
 }
-.button:hover{
-    background-color: #ffffff92;
-    color:rgb(14, 107, 14);
+.content .button:hover{
+    background-color: rgb(22, 22, 22);
+    color:#fff;
     transition: all 0.5 ease-in;
 }
 
-.image{
-
-    margin-top:80px;
-    margin-left: 80px;
+.content .image{
+    margin-top:30px;
+    margin-right:80px;
 }
 
 .image img{
     max-width: 1000px;
+    width: 500px;
     max-height: 500px;
 }
 
@@ -208,7 +251,7 @@ nav ul li a.active{
     margin-top: 0px;
     margin-right: 10px;
     padding: 20px;
-    display: block ;
+    display: inline ;
     
 }
 
