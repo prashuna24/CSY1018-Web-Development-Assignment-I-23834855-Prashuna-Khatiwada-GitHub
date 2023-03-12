@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> Prashuna || Home</title>
         <meta charset="UTF-8">
@@ -14,7 +14,7 @@
             <!--navigation bar-->
             <nav>
 
-                <a href="index.html"> <img src="images/logo.png"/> </a>
+                <a href="index.html"> <img src="images/logo.png" alt="Logo"> </a>
                 <ul>
                     <li><a href="index.html" class="active" title="Home Page"> Home </a></li>
                     <li><a href="portfolio.html" title="Portfolio"> Portfolio </a></li>
@@ -31,48 +31,78 @@
                 <!--Introductory Text-->
                 <div class="text">
                 <p> Namaste!</p>
-                <br/>
-                <h1> I am <span> Prashuna Khatiwada.</span></h1>
+                <br>
+                <h1> I am <a href="#abt-me"><span> Prashuna Khatiwada.</span> </h1> </a>
                     
-                <br/>
-                <hr/>
-                <br/>
+                <br>
+                <hr>
+                <br>
                 <p> Welcome to my webpage!<br>
                     I am a first year Computer Science student studying at the University of Northampton.<br>
                     I predominantly design websites using HTML and CSS.
-                    <br/>
-                    <br/>
-                    <a href="contact.html"><button> Get to know Me!</button></a>
-                    <a href="portfolio.html"><button> Here is my Work!</button></a>
+                    <br>
+                    <br>
+                    <a href="contact.html" class="button">Get in Touch</a>
+                    <a href="portfolio.html" class="button">Here are my works</a>
                 </p>
                 </div>
 
                 <!--Introductory Image-->
                 <div class="image">
-                    <img src="images/me.png" style="height: 1000px;" width="500px" alt="Harry, Hermione and Ron">
+                    <img src="images/me.png" style="height: 1000px; width:500px;" alt="Harry, Hermione and Ron">
                 </div>
 
             </div>
 
+            <br>
+
+            <!--About Me Section-->
+            <div id="abt-me">
+
+                <div class="me-img">
+                    <img src="images/cat.png" style="height: 350px; width: 300px;" alt="Cat wearing glasses">
+                </div>
+
+                <div class="me">
+                    <div class="me-txt">
+                    <h2>Get to know me!</h2>
+                    <br><hr><br>
+                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
             <!--Footer-->
             <div class="ftr">
-                <div class="ftr-txt">
-                <h3> Copyright: Prashuna Khatiwada</h3>
-                <br/> <br/>
-                <p> Find me everywhere</p>
-                <br/>
-            </div>
                 <!--Social Media Links-->
-                <div class="socials">
-
-                <img src="images/social.png"/>
-                <img src="images/social.png"/>
-                <img src="images/social.png"/>
-
+                <div class="ftr-col-1">
+                    <a href="www.instagram.com"> <img src="images/insta.png" alt="Instagram"> </a>
+                    <a href="instagram.com"> <img src="images/yt.png" alt="YouTube"> </a>
+                    <a href="instagram.com"> <img src="images/fb.png" alt="Facebook"> </a>
                 </div>
 
+                <!--Copyright-->
+                <div class="ftr-col-2">
+                    <p> Designed and Developed By:<br>
+                    Prashuna Khatiwada<br>
+                    © 2023 </p>
+                </div>
+
+                <!--Quick Links-->
+                <div class="ftr-col-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                    <li><a href="index.html" title="Home Page"> Home </a></li>
+                    <li><a href="portfolio.html" title="Portfolio"> Portfolio </a></li>
+                    <li><a href="contact.html" title="Contact"> Contact </a></li>
+                    <li><a href="work-experience.html" title="Work Experience"> Work Experience</a></li>
+                    <li><a href="site-report.html" title="Site Report"> Site Report </a></li>
+                    </ul>
+                </div>
             </div>
     </body>
     </html>

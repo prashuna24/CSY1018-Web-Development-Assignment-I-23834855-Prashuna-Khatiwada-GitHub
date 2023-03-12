@@ -12,7 +12,7 @@ body{
 }
 
 .background{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/background.png);
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/1.webp);
   min-height: 100vh;
   width: 100%;
   background-size: cover;
@@ -58,14 +58,50 @@ nav ul li a.active{
   transition: all 0.5s ease;
 }
 
-.content{
-  display: flex;
-  max-height: 500px;
-  width: 100%;
-  justify-content:center ;
+.slider-cont{
+  max-width: 700px;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+  height: 450px;
+  margin: auto;
+  margin-top: 100px;
 }
-.content h1{
-  color: #94bd6e;
-  font-family: 'Cascadia Code', sans-serif;
-  margin: 30px;
+
+.slides{
+  width: 700px;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.slides img{
+  width: 700px;
+  height: 450px;
+  
+}
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
 }

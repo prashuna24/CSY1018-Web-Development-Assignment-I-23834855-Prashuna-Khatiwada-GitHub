@@ -12,12 +12,13 @@ body{
 }
 
 .background{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/background.png);
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/1.webp);
   min-height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav{
@@ -58,31 +59,97 @@ nav ul li a.active{
   transition: all 0.5s ease;
 }
 
- h1{
-    max-height: 500px;
-    max-width: 500px;
-    text-align: left;
-    margin-top: 150px;
-    margin-left:50px;
-    color: rgb(14, 107, 14);
-    font-family: 'Cascadia Code', sans-serif;
+.cntct{
+  display:flex;
+  justify-content: space-around;
+}
+
+.cntct h1{
+  padding: 20px;
+  font-family: 'Cascadia Code', sans-serif;
+}
+
+.frm{
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: 80vh;
 }
 
 form{
-  width: 85%;
-  max-width: 600px;
+  max-height: 600px;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left:50px;
+  color: rgb(14, 107, 14);
+  border: 4px solid green;
+  border-radius: 20px;
+  padding: 20px ;
 }
 
 .input{
   margin-bottom: 30px;
-  color: #94bd6e;
+  position: relative;
 }
 
 input,textarea{
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 20px;
   outline: 0;
   border: 1px solid #fff;
+  border-radius: 10px;
   background: transparent;
-  font-size: 10px;
+  font-size: 5px;
+}
+
+label{
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor:text;
+  transition: 0.2s;
+  color: #fff;
+}
+
+form button{
+  padding: 10px;
+  background: rgb(193, 177, 179);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 10px;
+  width: 90%;
+  background-color: transparent;
+  color: #fff;
+}
+
+form button:hover{
+  background-color: rgba(165, 163, 163, 0.704);
+  cursor: pointer;
+}
+input:focus~label{
+  top:-35px;
+  font-size: 15px;
+}
+
+.details{
+  color: #94bd6e;
+  max-height: 600px;
+  width: 650px;
+  text-align: center;
+  margin-top: 300px;
+  border: 4px solid green;
+}
+
+.info{
+  color: #fff;
+  text-align: left;
+  display: flex;
+}
+
+.info img{
+  width: 30px;
+  height: 30px;
 }
