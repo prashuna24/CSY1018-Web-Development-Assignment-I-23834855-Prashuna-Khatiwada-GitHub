@@ -174,3 +174,55 @@ nav ul li a.active{
   letter-spacing: .5px;
   text-align: justify;
 }
+
+/*Ravenclaw*/
+#houses-ravenclaw{
+  width: 50%;
+  height: 50vh;
+  border: solid 3px #5c8fe0b4;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 20px ;
+  margin-top: 150px;
+  margin-left:45%;
+  padding: 10px;
+} 
+
+.r-content{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+
+}
+
+#houses-ravenclaw .txt-ravenclaw h3{
+  text-align: center;
+  color: #aac1d9;
+}
+
+#houses-ravenclaw .image-ravenclaw{
+  text-align: left;
+  padding-top: 90px;
+
+}
+#houses-ravenclaw .image-ravenclaw img{
+  height: 200px;
+  width: 220px;
+}
+
+#houses-ravenclaw .image-ravenclaw img:hover{
+  opacity: 50%;
+
+}
+
+#houses-ravenclaw .txt-ravenclaw{
+  width: 80%;
+  height: 200px;
+  color: #aac1d9;
+  font-size: 20px;
+  padding: 20px;
+  font-family: serif;
+  letter-spacing: .5px;
+  text-align: justify;
+}
