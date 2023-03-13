@@ -279,3 +279,54 @@ nav ul li a.active{
   text-align: justify;
 }
 
+/*Hufflepuff*/
+#houses-hufflepuff{
+  width: 50%;
+  height: 50vh;
+  border: solid 3px #ead30ab4;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 20px ;
+  margin-top: 150px;
+  margin-left:45%;
+  padding: 10px;
+} 
+
+.h-content{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+#houses-hufflepuff .txt-hufflepuff h3{
+  text-align: center;
+  color: #dbca77;
+}
+
+#houses-hufflepuff .image-hufflepuff{
+  text-align: left;
+  padding-top: 90px;
+
+}
+#houses-hufflepuff .image-hufflepuff img{
+  height: 200px;
+  width: 220px;
+}
+
+#houses-hufflepuff .image-hufflepuff img:hover{
+  opacity: 50%;
+
+}
+
+#houses-hufflepuff .txt-hufflepuff{
+  width: 80%;
+  height: 200px;
+  color: #dbca77;
+  font-size: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  text-align: justify;
+}
+
