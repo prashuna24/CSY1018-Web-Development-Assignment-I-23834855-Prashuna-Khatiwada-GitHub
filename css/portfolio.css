@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: Black;
 }
@@ -58,12 +62,22 @@ nav ul li a.active{
   transition: all 0.5s ease;
 }
 
+.content h1{
+  font-family: 'Cascadia Code', monospace;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
 .slider-cont{
   max-width: 700px;
   overflow: hidden;
+  border: 3px solid #c9b3b3;
+  box-shadow: #c9b3b3;
   height: 450px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .slides{
@@ -104,3 +118,5 @@ nav ul li a.active{
       transform: translateX(-300%);
   }
 }
+
+
