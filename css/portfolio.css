@@ -83,7 +83,7 @@ nav ul li a.active{
 .slides{
   width: 700px;
   display: flex;
-  animation: slide 16s infinite;
+  animation: slide 12s infinite;
 }
 
 .slides img{
@@ -119,4 +119,58 @@ nav ul li a.active{
   }
 }
 
+.houses{
+  display: grid;
+}
 
+/*Gryffindor*/
+#houses-gryffindor{
+  width: 50%;
+  height: 50vh;
+  border: solid 3px #e27373b4;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 20px ;
+  margin-top: 150px;
+  margin-left: 40px;
+  padding: 10px;
+} 
+
+.g-content{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+
+}
+
+#houses-gryffindor .txt-gryffindor h3{
+  text-align: center;
+  color: #c7786a;
+}
+
+#houses-gryffindor .image-gryffindor{
+  text-align: left;
+  padding-top: 90px;
+
+}
+#houses-gryffindor .image-gryffindor img{
+  height: 200px;
+  width: 220px;
+}
+
+#houses-gryffindor .image-gryffindor img:hover{
+  opacity: 50%;
+
+}
+
+#houses-gryffindor .txt-gryffindor{
+  width: 80%;
+  height: 200px;
+  color: #c7786a;
+  font-size: 20px;
+  padding: 20px;
+  font-family: serif;
+  letter-spacing: .5px;
+  text-align: justify;
+}
