@@ -226,3 +226,56 @@ nav ul li a.active{
   letter-spacing: .5px;
   text-align: justify;
 }
+
+/*Slytherin*/
+#houses-slytherin{
+  width: 50%;
+  height: 50vh;
+  border: solid 3px #125815b4;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 20px ;
+  margin-top: 150px;
+  margin-left: 40px;
+  padding: 10px;
+} 
+
+.s-content{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+
+}
+
+#houses-slytherin .txt-slytherin h3{
+  text-align: center;
+  color: #94bd6e;
+}
+
+#houses-slytherin .image-slytherin{
+  text-align: left;
+  padding-top: 90px;
+
+}
+#houses-slytherin .image-slytherin img{
+  height: 200px;
+  width: 220px;
+}
+
+#houses-slytherin .image-slytherin img:hover{
+  opacity: 50%;
+
+}
+
+#houses-slytherin .txt-slytherin{
+  width: 80%;
+  height: 200px;
+  color: #94bd6e;
+  font-size: 20px;
+  padding: 20px;
+  font-family: serif;
+  letter-spacing: .5px;
+  text-align: justify;
+}
+
