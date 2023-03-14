@@ -37,7 +37,7 @@ nav{
 
 nav img{
     height: 35px;
-    width: 120px;
+    width: 100px;
     margin-left: 40px;
 }
 
@@ -137,6 +137,7 @@ nav ul li a.active{
     margin-left:150px;
     color: #908cbf;
     font-family: 'Genos', sans-serif;
+    line-height: 40px;
 }
 
 /*Main body paragraph*/
