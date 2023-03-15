@@ -12,11 +12,11 @@ body{
 }
 
 .background{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/1.webp);
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg3.jpg);
   min-height: 100vh;
   width: 100%;
   background-size: cover;
-  position: relative;
+  position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -59,23 +59,94 @@ nav ul li a.active{
   transition: all 0.5s ease;
 }
 
+#abt-me{
+  display: flex;
+  max-height: 500px;
+  width: 80%;
+  margin-top: 12%;
+  margin-left: 5%;
+}
+
+.me-img{
+  max-height: 500px;
+  max-width: 500px;
+  text-align: left;
+  margin-left:30px;
+  padding:20px;
+  margin-right: 50px;
+  border: solid rgba(49, 141, 49, 0.441) 5px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px ;
+}
+
+.me{
+  background-color: rgba(0, 0, 0, 0.497);
+  max-height: 600px;
+  max-width: 1000px;
+
+}
+.me-txt h2{
+  text-align: center;
+  font-family: 'Genos', monospace;
+  font: weight 900px;
+  font-size: 40px;
+  color: #2f8619;
+
+}
+.me-txt{
+  margin: 10px;
+  margin-top: 15px ;
+  text-align:left;
+  color: #908cbf;
+  font-size: 18px;
+  font-family: serif;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+
+.me-txt span{
+color: #ae658e;
+font-weight: 24px;
+}
+
+.me-txt .tech{
+list-style-type:square;
+display: grid;
+grid-template-columns: repeat(2, minmax(140px, 200px));
+padding-left:15px ;
+}
+
+.me-txt a{
+color: #ae658e;
+text-decoration:underline;
+}
+
+.heading{
+  font-family: 'Genos', monospace;
+  letter-spacing: 3px;
+  color: #2f8619;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 35px;
+}
+
 .cntct{
   display:flex;
   justify-content: space-around;
 }
 
 .frm{
-  padding: 20px;
   width: 50%;
   max-width: 500px;
   height: 80vh;
+  margin-left: 5%;
 }
 
 form{
   max-height: 600px;
   max-width: 500px;
-  text-align: center;
-  margin-top: 80px;
+  text-align: left;
+  margin-top: 50px;
   color: rgb(14, 107, 14);
   border: 4px solid green;
   border-radius: 20px;
@@ -125,6 +196,7 @@ form button:hover{
   background-color: rgba(165, 163, 163, 0.704);
   cursor: pointer;
 }
+
 input:focus~label{
   top:-35px;
   font-size: 15px;
@@ -133,7 +205,7 @@ input:focus~label{
 .details{
   margin-top: 200px;
   color: #94bd6e;
-  max-height: 350px;
+  max-height: 40vh;
   width: 500px;
   text-align: center;
   border: #ffffff solid 1px;
