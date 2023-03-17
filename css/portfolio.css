@@ -16,11 +16,13 @@ body{
 }
 
 .background{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/1.webp);
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg3.jpg);
   min-height: 100vh;
   width: 100%;
   background-size: cover;
-  position: relative;
+  position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
@@ -65,14 +67,15 @@ nav ul li a.active{
 .content h1{
   font-family: 'Genos', monospace;
   letter-spacing: 3px;
-  color: #50c533;
+  color: #908cbf;
   text-align: center;
   margin-top: 50px;
   font-size: 50px;
 }
 
 .slider-cont{
-  max-width: 700px;
+  width: 70%;
+  max-width: 900px;
   overflow: hidden;
   border: 3px solid #c9b3b3;
   box-shadow: #c9b3b3;
@@ -82,13 +85,13 @@ nav ul li a.active{
 }
 
 .slides{
-  width: 700px;
+  width: 900px;
   display: flex;
   animation: slide 12s infinite;
 }
 
 .slides img{
-  width: 700px;
+  width: 900px;
   height: 450px;
   
 }
@@ -122,25 +125,30 @@ nav ul li a.active{
 
 .houses{
   display: grid;
-}
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  align-content: space-between;
 
+}
+ 
 /*Gryffindor*/
 #houses-gryffindor{
-  width: 50%;
-  height: 50vh;
+  width: 650px;
+  height: 60vh;
   border: solid 3px #e27373b4;
   border-right: 0px;
   border-left: 0px;
   border-radius: 20px ;
   margin-top: 150px;
-  margin-left: 40px;
-  padding: 10px;
+  margin-right:500px;
+  margin-left:50px ;
+
+
 } 
 
 .g-content{
   margin-top: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   line-height: 30px;
 
 }
@@ -148,6 +156,8 @@ nav ul li a.active{
 #houses-gryffindor .txt-gryffindor h3{
   text-align: center;
   color: #c7786a;
+  font-family: 'Genos', monospace;
+  font-size: 40px;
 }
 
 #houses-gryffindor .image-gryffindor{
@@ -167,26 +177,28 @@ nav ul li a.active{
 
 #houses-gryffindor .txt-gryffindor{
   width: 80%;
-  height: 200px;
+  height: 250px;
   color: #c7786a;
   font-size: 20px;
   padding: 20px;
-  font-family: serif;
+  font-family: 'Genos';
   letter-spacing: .5px;
   text-align: justify;
 }
 
 /*Ravenclaw*/
 #houses-ravenclaw{
-  width: 50%;
-  height: 50vh;
+  width: 650px;
+  height: 60vh;
   border: solid 3px #5c8fe0b4;
   border-right: 0px;
   border-left: 0px;
   border-radius: 20px ;
   margin-top: 150px;
-  margin-left:45%;
-  padding: 10px;
+  margin-left: 600px;
+  margin-right: 20px;
+  
+
 } 
 
 .r-content{
@@ -200,6 +212,8 @@ nav ul li a.active{
 #houses-ravenclaw .txt-ravenclaw h3{
   text-align: center;
   color: #aac1d9;
+  font-family: 'Genos', monospace;
+  font-size: 40px;
 }
 
 #houses-ravenclaw .image-ravenclaw{
@@ -223,22 +237,22 @@ nav ul li a.active{
   color: #aac1d9;
   font-size: 20px;
   padding: 20px;
-  font-family: serif;
+  font-family: 'Genos';
   letter-spacing: .5px;
   text-align: justify;
 }
 
 /*Slytherin*/
 #houses-slytherin{
-  width: 50%;
-  height: 50vh;
+  width: 650px;
+  height: 60vh;
   border: solid 3px #125815b4;
   border-right: 0px;
   border-left: 0px;
   border-radius: 20px ;
   margin-top: 150px;
-  margin-left: 40px;
-  padding: 10px;
+  margin-right:500px;
+  margin-left:50px ;
 } 
 
 .s-content{
@@ -252,6 +266,8 @@ nav ul li a.active{
 #houses-slytherin .txt-slytherin h3{
   text-align: center;
   color: #94bd6e;
+  font-family: 'Genos', monospace;
+  font-size: 40px;
 }
 
 #houses-slytherin .image-slytherin{
@@ -275,22 +291,23 @@ nav ul li a.active{
   color: #94bd6e;
   font-size: 20px;
   padding: 20px;
-  font-family: serif;
+  font-family: 'Genos';
   letter-spacing: .5px;
   text-align: justify;
 }
 
 /*Hufflepuff*/
 #houses-hufflepuff{
-  width: 50%;
-  height: 50vh;
+  width: 650px;
+  height: 60vh;
   border: solid 3px #ead30ab4;
   border-right: 0px;
   border-left: 0px;
   border-radius: 20px ;
   margin-top: 150px;
-  margin-left:45%;
-  padding: 10px;
+  margin-left: 600px;
+  margin-right: 20px;
+  
 } 
 
 .h-content{
@@ -303,6 +320,8 @@ nav ul li a.active{
 #houses-hufflepuff .txt-hufflepuff h3{
   text-align: center;
   color: #dbca77;
+  font-family: 'Genos', monospace;
+  font-size: 40px;
 }
 
 #houses-hufflepuff .image-hufflepuff{
@@ -326,7 +345,7 @@ nav ul li a.active{
   color: #dbca77;
   font-size: 20px;
   padding: 20px;
-  font-family: sans-serif;
+  font-family: 'Genos';
   letter-spacing: .5px;
   text-align: justify;
 }
