@@ -253,6 +253,7 @@ width: 25px;
 height: 25px;
 padding: 12px;
 padding-bottom: 5px;
+transition: all .25s ease-in;
 }
 .ftr .row-2 {
 color: #000;

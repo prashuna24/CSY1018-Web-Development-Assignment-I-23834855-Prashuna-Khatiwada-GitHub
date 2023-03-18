@@ -144,7 +144,6 @@ nav ul li a.active{
 .me-txt h2{
   text-align: center;
   font-family: 'Genos', monospace;
-  font: weight 900px;
   font-size: 40px;
   color: #2f8619;
 
@@ -162,7 +161,7 @@ nav ul li a.active{
 
 .me-txt span{
 color: #ae658e;
-font-weight: 24px;
+
 }
 
 .me-txt .tech{
@@ -332,6 +331,7 @@ width: 25px;
 height: 25px;
 padding: 12px;
 padding-bottom: 5px;
+transition: all .25s ease-in;
 }
 .ftr .row-2 {
 color: #000;

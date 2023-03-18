@@ -115,3 +115,122 @@ nav ul li a.active{
     left: 0;
   }
 }
+
+
+/*footer*/
+footer{
+  background-color:#908cbfb3;
+  min-width: 880px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 50px;
+  text-align: center;
+  color: #000;
+  font-family: monospace;
+  border-radius: 40px 40px 0 0;
+}
+
+.ftr .row-1{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.ftr .row-1 img{
+width: 25px;
+height: 25px;
+padding: 12px;
+padding-bottom: 5px;
+transition: all .25s ease-in;
+}
+.ftr .row-2 {
+color: #000;
+}
+.ftr .row-2 ul{
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+}
+.ftr .row-2 ul li{
+display: inline-block;
+padding: 9px 11px;
+text-transform: uppercase;   
+}
+
+.ftr .row-2 ul li a{
+color: #103d05;
+text-decoration: underline;
+}
+.ftr .row-1 img:hover{
+transform: translateY(-10px);
+}
+
+/*Responsive */
+  @media (max-width:1300px) {
+    footer{
+      margin-top: 50px;
+    }
+    footer .ftr{
+      margin: auto;
+    }
+  
+  }
+
+  @media (max-width:1480px){
+  .houses-container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #houses-gryffindor{
+    margin: 90px auto auto auto;
+    width:750px;
+
+  }
+  #houses-gryffindor .g-content{
+    line-height: 32px;
+
+  }
+  #houses-ravenclaw{
+    margin: 90px auto auto auto;
+    width:750px;
+
+  }
+  #houses-gryffindor .r-content{
+    line-height: 32px;
+
+  }
+  #houses-slytherin{
+    margin: 90px auto auto auto;
+    width:750px;
+
+  }
+  #houses-gryffindor .s-content{
+    line-height: 32px;
+
+  }
+  #houses-hufflepuff{
+    margin: 90px auto auto auto;
+    width:750px;
+
+  }
+  #houses-gryffindor .h-content{
+    line-height: 32px;
+
+  }
+  }
+
+  @media (max-width:1153px){
+ .background{
+    background-image: none;
+    
+  }
+
+  @media (max-width:850px){
+    .content h1{
+      font-size: 30px;
+    };
+  }
+}
