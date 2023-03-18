@@ -281,7 +281,6 @@ text-transform: uppercase;
 @media (max-width:1246px) {
   footer{
     margin-top: 295px;
-    margin-bottom: 0;
   }
   footer .ftr{
     margin: auto;
@@ -327,25 +326,12 @@ text-transform: uppercase;
     margin-left:80px;
   } 
 
-  .wrapper .static-txt{
-    font-size: 50px;
-  }
-
   .wrapper .dynamic-txts{
-    height: 70px;
-    line-height: 70px;
-    position: fixed;
+  
     width: 40%;
     margin-left: 130px;
     top:320px;
     left:80px;
   }
 
-  .wrapper.dynamic-txts li span{
-    font-size: 30px;
-    position: fixed;
-    margin-left: 15px;
-    left:0;
-    
-  }
 }
