@@ -66,6 +66,7 @@ nav ul li a.active{
     transition: all 0.5s ease;
 }
 
+/*Responsive Hamburger Menu*/
 .checkbtn{
   color: #908cbf;
   cursor: pointer;
@@ -85,11 +86,11 @@ nav ul li a.active{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+@media (max-width: 859px){
   .checkbtn{
     display: block;
   }
-  ul{
+  nav ul{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -121,13 +122,28 @@ nav ul li a.active{
     justify-content: space-between;
     max-height: 700px;
     width: 100%;
-    margin-top: 50px;
-    
+    margin-top: 50px;  
  }
 
+ .content .text{
+  max-height: 500px;
+  max-width: 600px;
+  text-align: left;
+  margin-top: 80px;
+  margin-left:150px;
+  color: #908cbf;
+  font-family: 'Genos', sans-serif;
+  line-height: 40px;
+}
+
+/*Main body paragraph*/
+.content .h1{
+  font-size: 50px;
+}
  /*Typewriter Animation*/
  .wrapper{
     display: flex;
+    width: 800px;
   }
   .wrapper .static-txt{
     color: #e8f6e7;
@@ -139,6 +155,7 @@ nav ul li a.active{
     height: 90px;
     line-height: 90px;
     overflow: hidden;
+
   }
   .dynamic-txts li{
     list-style: none;
@@ -177,21 +194,7 @@ nav ul li a.active{
       left: 0;
     }
   }
-.content .text{
-    max-height: 500px;
-    max-width: 500px;
-    text-align: left;
-    margin-top: 80px;
-    margin-left:150px;
-    color: #908cbf;
-    font-family: 'Genos', sans-serif;
-    line-height: 40px;
-}
 
-/*Main body paragraph*/
-.content .h1{
-    font-size: 50px;
-}
 .content .text p{
     font-size: 25px;
 }
@@ -230,7 +233,8 @@ nav ul li a.active{
 
 footer{
     background-color:#908cbfb3;
-    min-width: 100%;
+    min-width: 880px;
+    width: 100%;
     margin-bottom: 0;
     text-align: center;
     color: #000;
@@ -271,4 +275,77 @@ text-transform: uppercase;
 }
 .ftr .row-1 img:hover{
   transform: translateY(-10px);
+}
+
+/*Making the Website Responsive*/
+@media (max-width:1246px) {
+  footer{
+    margin-top: 295px;
+    margin-bottom: 0;
+  }
+  footer .ftr{
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 1120px){
+  .background{
+    background-image: none;
+  }
+  .content{
+    display: grid;
+    max-height: 1500px;
+  }
+
+  .text{
+    margin:0 0 0 0;
+    width: 800px;
+  }
+
+  .content .image{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height:400px;
+    width:100%;
+    margin-top: 90px;
+    
+  }
+
+  .content .image img{
+    height:350px;
+    width: 350px;
+    padding: 10px;
+  }
+  
+}
+
+@media only screen and (max-width:912px){
+
+  .content .text{
+    margin-left:80px;
+  } 
+
+  .wrapper .static-txt{
+    font-size: 50px;
+  }
+
+  .wrapper .dynamic-txts{
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 40%;
+    margin-left: 130px;
+    top:320px;
+    left:80px;
+  }
+
+  .wrapper.dynamic-txts li span{
+    font-size: 30px;
+    position: fixed;
+    margin-left: 15px;
+    left:0;
+    
+  }
 }
