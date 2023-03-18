@@ -7,12 +7,16 @@
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: Black;
 }
 
 .background{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/1.webp);
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg3.jpg);
   min-height: 100vh;
   width: 100%;
   background-size: cover;
@@ -74,24 +78,70 @@ nav ul li:hover .sub-meu ul li{
   background-color:#fff;
 }
 
+.heading {
+  display: flex;
+  max-height: 500px;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 5%;
+  color: #94bd6e;
+}
+
+.heading-image{
+  max-height: 500px;
+  max-width: 500px;
+  text-align: left;
+  margin-left:30px;
+  padding:20px;
+  margin-right: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px ;
+}
+
+.heading-image img{
+  height: 300px;
+  width: 300px;
+}
+
+.heading-text{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Genos', monospace;
+}
+
+.heading-text a{
+  color: #ae658e;
+
+}
+
+.heading-text a:hover{
+  text-decoration: underline;
+  
+}
 /* Cards and Hover Effect*/
-.cards-container{
+#cards-container{
   display:flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  padding: 3%;
+  margin-top: 10%;
 }
 .card{
 	width: 350px;
 	position: relative;
 	overflow: hidden;
 	transition: all 0.3s ease-out;
+  align-items: center;
 
 }
 
 .card img{
+  height: 300px;
+  width: 300px;
+  box-shadow: 6px 6px 5px rgba(136, 138, 138, 0.792);
   border-radius: 40px;
-	transform: scale(1.3);
+	transform: scale(1.1);
 	transition: all 0.3s ease-out;
 }
 .card:hover img{
@@ -103,39 +153,32 @@ nav ul li:hover .sub-meu ul li{
 	bottom: 0;
 	left: 0;
 	padding-top: 15px;
+  height: 100vh;
 	width: 90%;
 	text-align: center;
 	color: #fff;
 	font-size: 18px;
 }
 .card .text h3{
+  font-family: 'Genos', monospace;
 	font-weight: 700;
 	font-size: 32px;
 	margin: 0 0 20px;
 	transform: translateY(30px);
 	opacity: 0;
 	transition: all 0.3s ease-out;
+  color: #94bd6e;
 
 }
 .card .text p{
+  font-size: 20px;
 	transform: translateY(30px);
+  line-height: 40px;
 	opacity: 0;
 	transition: all 0.3s ease-out 0.2s;
+  font-family: 'Genos', monospace;
 }
-.card .text a{
-	color: #fff;
-	background:#34aff3;
-	display: inline-block;
-	padding: 10px 25px;
-	border-radius: 5px;
-	text-decoration: none;
-	transform: translateY(30px);
-	opacity: 0;
-	transition: all 0.3s ease-out 0.4s;
-}
-.card .text a:hover{
-	background:#0a83c5;
-}
+
 .card:hover .text h3{
 	opacity: 1;
 	transform: translateY(0px);
@@ -144,10 +187,7 @@ nav ul li:hover .sub-meu ul li{
 	opacity: 1;
 	transform: translateY(0px);
 }
-.card:hover .text a{
-	opacity: 1;
-	transform: translateY(0px);
-}
+
 
 
 
