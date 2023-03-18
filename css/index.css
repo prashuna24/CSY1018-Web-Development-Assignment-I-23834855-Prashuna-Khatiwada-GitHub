@@ -36,9 +36,9 @@ nav{
 }
 
 nav img{
-    height: 35px;
-    width: 100px;
-    margin-left: 40px;
+  height: 35px;
+  width: 120px;
+  margin-left: 40px;
 }
 
 nav ul{
@@ -180,20 +180,47 @@ nav ul li a.active{
     max-height: 500px;
 }
 
-.ftr{
-    background-color: rgba(48, 48, 48, 0.526);
-    width: 100%;
+footer{
+    background-color:#908cbfb3;
+    min-width: 100%;
     margin-bottom: 0;
-    margin-top: 50px;
     text-align: center;
-
+    color: #000;
+    font-family: monospace;
+    border-radius: 40px 40px 0 0;
 }
 
-.ftr-col-2{
-    text-align: center;
-    padding: 20px;
-    font-family: 'Cascadia Code';
-    color:#2f8619;
-    font-weight: 40px;
-    font-size: 12px;
+.ftr .row-1{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.ftr .row-1 img{
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  padding-bottom: 5px;
+}
+.ftr .row-2 {
+  color: #000;
+}
+.ftr .row-2 ul{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ftr .row-2 ul li{
+display: inline-block;
+padding: 9px 11px;
+text-transform: uppercase;   
+}
+
+.ftr .row-2 ul li a{
+  color: #103d05;
+  text-decoration: underline;
+}
+.ftr .row-1 img:hover{
+  transform: translateY(-10px);
 }
