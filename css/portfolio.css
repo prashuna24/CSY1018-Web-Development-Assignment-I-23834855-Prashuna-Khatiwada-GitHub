@@ -73,6 +73,7 @@ nav ul li a.active{
   font-size: 50px;
 }
 
+/*Image Slider*/
 .slider-cont{
   width: 70%;
   max-width: 900px;
@@ -141,8 +142,6 @@ nav ul li a.active{
   margin-top: 150px;
   margin-right:500px;
   margin-left:50px ;
-
-
 } 
 
 .g-content{
@@ -150,7 +149,6 @@ nav ul li a.active{
   display: flex;
   justify-content: space-around;
   line-height: 30px;
-
 }
 
 #houses-gryffindor .txt-gryffindor h3{
@@ -163,17 +161,17 @@ nav ul li a.active{
 #houses-gryffindor .image-gryffindor{
   text-align: left;
   padding-top: 90px;
-
 }
 #houses-gryffindor .image-gryffindor img{
   height: 200px;
   width: 220px;
+
 }
 
 #houses-gryffindor .image-gryffindor img:hover{
   opacity: 50%;
-
 }
+
 
 #houses-gryffindor .txt-gryffindor{
   width: 80%;
