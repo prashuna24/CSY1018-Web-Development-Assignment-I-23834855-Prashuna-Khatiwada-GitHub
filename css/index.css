@@ -141,23 +141,23 @@ nav ul li a.active{
   font-size: 50px;
 }
  /*Typewriter Animation*/
- .wrapper{
+ .text-wrapper{
     display: flex;
     width: 800px;
   }
-  .wrapper .static-txt{
+  .text-wrapper .fixed-txt{
     color: #e8f6e7;
     font-size: 60px;
     font-weight: 400;
   }
-  .wrapper .dynamic-txts{
+  .text-wrapper .changing-txts{
     margin-left: 15px;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
 
   }
-  .dynamic-txts li{
+  .changing-txts li{
     list-style: none;
     color: #50c533;
     font-size: 60px;
@@ -171,12 +171,12 @@ nav ul li a.active{
       top: -360px;
     }
   }
-  .dynamic-txts li span{
+  .changing-txts li span{
     position: relative;
     margin: 5px 0;
     line-height: 90px;
   }
-  .dynamic-txts li span::after{
+  .changing-txts li span::after{
     content: "";
     position: absolute;
     left: 0;
@@ -327,7 +327,7 @@ text-transform: uppercase;
     margin-left:80px;
   } 
 
-  .wrapper .dynamic-txts{
+  .text-wrapper .changing-txts{
   
     width: 40%;
     margin-left: 130px;

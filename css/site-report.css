@@ -89,7 +89,7 @@ nav ul li a.active{
   .checkbtn{
     display: block;
   }
-  ul{
+  nav ul{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -202,13 +202,14 @@ nav ul li a.active{
 
 .row-1 .images{
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .row-1 .images img{
   padding: 20px;
-  height: 350px;
-  width: 550px;
+  max-height: 350px;
+  max-width: 550px;
 }
 
 .row a{
@@ -221,33 +222,46 @@ nav ul li a.active{
 }
 
 .row-2 .images{
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .row-2 .images img{
   padding: 20px;
-  height: 350px;
-  width: 550px;
+  max-height: 350px;
+  max-width: 550px;
 }
+
+.row-5 .images{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row-5 .images img{
+  padding: 20px;
+  max-height: 350px;
+  max-width: 550px;
+}
+
 
 .row-4 span{
   color: #908cbf;
   font-weight: 800;
 }
-.row-5 .images{
+.row-6 .images{
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
 }
-.row-5 .images img{
+.row-6 .images img{
   padding: 20px;
-  height: 350px;
-  width: 550px;
+  max-height: 350px;
+  max-width: 550px;
 }
 
 /*footer*/
 footer{
-  background-color:#908cbf;
+  background-color:#908cbfb3;
   min-width: 880px;
   width: 100%;
   margin-bottom: 0;
@@ -295,10 +309,63 @@ transform: translateY(-10px);
 /*Responsive */
   @media (max-width:1300px) {
     footer{
+      width: 1250px;
+      margin: auto;
       margin-top: 50px;
     }
-    footer .ftr{
+  
+  }
+
+  @media (max-width:1245px){
+    .background{
+      background-image: none;
+    }
+    .heading{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
       margin: auto;
     }
-  
+
+    .heading-image{
+      margin: auto;
+    }
+
+    .heading-text{
+      margin: auto;
+      width: 1000px;
+
+    }
+    .content .row{
+      margin: auto;
+    }
+    
+
+    .row .images{
+      flex-direction: column;
+      margin: auto;
+      
+    }
+  }
+
+  @media (max-width:800px){
+    .row{
+      margin: 0;
+    }
+    
+    .row p{
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+  }
+
+  @media (max-width:315px) {
+    .row{
+      margin-right: 0;
+      max-width:1100px;
+    }
+    .row p{
+      font-size: 2em;
+      
+    }
   }
