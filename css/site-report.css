@@ -109,17 +109,145 @@ nav ul li a.active{
   }
   a:hover,a.active{
     background: none;
-    color: #0082e6;
+    
   }
   #check:checked ~ ul{
     left: 0;
   }
 }
 
+/*Content*/
+.heading {
+  display: flex;
+  width: 80%;
+  margin-top: 4%;
+  margin-left: 5%;
+  background-color: rgba(0, 0, 0, 0.321);
+  color: #94bd6e;
+}
+
+
+.heading-image{
+  max-height: 500px;
+  max-width: 500px;
+  text-align: left;
+  margin-left:30px;
+  padding:20px;
+  margin-right: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px ;
+}
+
+.heading-image img{
+  height: 300px;
+  width: 300px;
+}
+
+.heading-text{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Genos', monospace;
+  line-height: 40px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px ;
+}
+
+.row{
+  width: 1200px;
+  background-color: #00000033;
+  align-items: center;
+  border:2px solid green;
+  border-radius: 40px;
+  border-top: 0;
+  border-bottom: 0;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.row h2{
+  color: #94bd6e;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Genos';
+  font-size: 30px;
+}
+
+.row h3{
+  color: #908cbf;
+  padding-top: 35px;
+  font-size: 25px;
+  font-family: 'Genos';
+  line-height: 28px;
+  text-align: center;
+}
+.row p{
+  color: #af7c7c;
+  padding-top: 35px;
+  font-size: 25px;
+  font-family: 'Genos';
+  line-height: 28px;
+  
+}
+.row p span{
+  color: #908cbf;
+}
+
+.row-1 .images{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-1 .images img{
+  padding: 20px;
+  height: 350px;
+  width: 550px;
+}
+
+.row a{
+  color:#908cbf ;
+  transition: all 0.4s ease-in;
+}
+
+.row a:hover{
+  text-decoration: underline;
+}
+
+.row-2 .images{
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+}
+.row-2 .images img{
+  padding: 20px;
+  height: 350px;
+  width: 550px;
+}
+
+.row-4 span{
+  color: #908cbf;
+  font-weight: 800;
+}
+.row-5 .images{
+  display: flex;
+  justify-content: space-evenly;
+}
+.row-5 .images img{
+  padding: 20px;
+  height: 350px;
+  width: 550px;
+}
 
 /*footer*/
 footer{
-  background-color:#908cbfb3;
+  background-color:#908cbf;
   min-width: 880px;
   width: 100%;
   margin-bottom: 0;
@@ -144,9 +272,7 @@ padding: 12px;
 padding-bottom: 5px;
 transition: all .25s ease-in;
 }
-.ftr .row-2 {
-color: #000;
-}
+
 .ftr .row-2 ul{
 display: inline-flex;
 justify-content: space-between;
@@ -176,61 +302,3 @@ transform: translateY(-10px);
     }
   
   }
-
-  @media (max-width:1480px){
-  .houses-container{
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #houses-gryffindor{
-    margin: 90px auto auto auto;
-    width:750px;
-
-  }
-  #houses-gryffindor .g-content{
-    line-height: 32px;
-
-  }
-  #houses-ravenclaw{
-    margin: 90px auto auto auto;
-    width:750px;
-
-  }
-  #houses-gryffindor .r-content{
-    line-height: 32px;
-
-  }
-  #houses-slytherin{
-    margin: 90px auto auto auto;
-    width:750px;
-
-  }
-  #houses-gryffindor .s-content{
-    line-height: 32px;
-
-  }
-  #houses-hufflepuff{
-    margin: 90px auto auto auto;
-    width:750px;
-
-  }
-  #houses-gryffindor .h-content{
-    line-height: 32px;
-
-  }
-  }
-
-  @media (max-width:1153px){
- .background{
-    background-image: none;
-    
-  }
-
-  @media (max-width:850px){
-    .content h1{
-      font-size: 30px;
-    };
-  }
-}
